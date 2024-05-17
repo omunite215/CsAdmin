@@ -1,16 +1,15 @@
-import ECommerce from "@/components/Dashboard/E-commerce";
-import { Metadata } from "next";
+import CardSet from "@/components/CardSet";
+import { InviteForm } from "@/components/InviteForm";
+import TableComponent from "@/components/Tables/TableComponent";
 
-export const metadata: Metadata = {
-  title: "ComSec360",
-  description: "All your Service Needs At One Place",
-  // other metadata
-};
-
-export default function Home() {
+export default function Page() {
   return (
-    <>
-      <ECommerce />
-    </>
+    <section className="py-6 container space-y-6">
+      <CardSet />
+      <div className="flex justify-center items-start gap-6 md:flex-row flex-col-reverse">
+        <TableComponent />
+        <InviteForm />
+      </div>
+    </section>
   );
 }
