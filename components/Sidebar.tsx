@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const Sidebar = () => {
   const currentPath = usePathname();
   return (
-    <div className="hidden border-r bg-muted/40 xl:block px-2 animate-in slide-in-from-left-72 delay-300 duration-700">
+    <div className="hidden border-r bg-muted/40 md:block px-2 animate-in slide-in-from-left-72 delay-300 duration-700">
       <div className="flex h-full max-h-screen flex-col gap-2 fixed">
         <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
           <Link href="/" className="flex items-center gap-2 font-semibold">
