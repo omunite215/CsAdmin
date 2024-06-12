@@ -1,31 +1,54 @@
-import { Home, User2, Files, LogOut, Settings2 } from "lucide-react";
+import { Home, LayoutPanelLeft, Mail, FileText, Building2, CircleDollarSign } from "lucide-react";
 
 export const navItems = [
   {
-    title: "Dashboard",
-    href: "/",
-    icon: <Home className="h-4 w-4" />,
+    title: "Home",
+    icon: <Home className="size-4" />,
+    items: [
+      {
+        title: "Dashboard",
+        href: "/",
+        icon: <LayoutPanelLeft className="size-4" />
+      },
+      {
+        title: "Emails",
+        href: '/admin/emails',
+        icon: <Mail className="size-4" />
+      }
+    ]
   },
-  // {
-  //   title: "Account Users",
-  //   href: "/account-users",
-  //   icon: <User2 className="h-4 w-4" />,
-  // },
   {
-    title: "Share Templates",
-    href: "/templates",
-    icon: <Files className="h-4 w-4" />,
+    title: "Incorporation",
+    icon: <Building2 className="size-4" />,
+    items: [
+      {
+        title: "Documents",
+        href: "/admin/incorporation/documents",
+        icon: <FileText className="size-4" />
+      },
+      {
+        title: "Emails",
+        href: "/admin/incorporation/emails",
+        icon: <Mail className="size-4" />
+      },
+    ]
   },
-  // {
-  //   title: "Preferances",
-  //   href: "/preferances",
-  //   icon: <Settings2 className="h-4 w-4" />,
-  // },
-  // {
-  //   title: "Logout",
-  //   href: "/",
-  //   icon: <LogOut className="h-4 w-4" />,
-  // },
+  {
+    title: "Annual Return",
+    icon: <CircleDollarSign className="size-4" /> ,
+    items: [
+      {
+        title: "Documents",
+        href: "/admin/annual-return/documents",
+        icon: <FileText className="size-4" />
+      },
+      {
+        title: "Emails",
+        href: "/admin/annual-return/emails",
+        icon: <Mail className="size-4" />
+      },
+    ]
+  }
 ];
 
 export const TemplateContent = [
@@ -103,4 +126,43 @@ export const messagesContent = [
     message: "Regarding Form Guidelines",
     time: "3 days ago",
   },
+];
+
+
+export const incorporationDocumentsContent = [
+  {
+    id: 1,
+    title: "Share Certificates Background",
+    href: "/templates"
+  },
+  {
+    id: 2,
+    title: "NNC1",
+    href: "/documents/NNC1.pdf"
+  },
+  {
+    id: 3,
+    title: "Article of Association (A&A)",
+    href: "/documents/AA.pdf"
+  },
+  {
+    id: 4,
+    title: "Ordinary Share Agreement",
+    href: "/documents/SA.pdf"
+  },
+  {
+    id: 5,
+    title: "Preferance Share Agreement",
+    href: "/documents/PSA.pdf"
+  },
+  {
+    id: 6,
+    title: "Minutes",
+    href: "/documents/MOM.pdf"
+  },
+  {
+    id: 7,
+    title: "IRBRI",
+    href: "/documents/IRBRI.pdf"
+  }
 ];
