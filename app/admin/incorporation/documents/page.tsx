@@ -12,11 +12,9 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
 import { incorporationDocumentsContent } from "@/lib/constants";
 import Link from "next/link";
 
@@ -32,7 +30,7 @@ const page = () => {
         </CardHeader>
         <CardContent>
           <Table>
-            <TableCaption>A list of your recent invoices.</TableCaption>
+            <TableCaption>A list of All Document Templates.</TableCaption>
             <TableHeader>
               <TableRow>
                 <TableHead>Sr No.</TableHead>

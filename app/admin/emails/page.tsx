@@ -47,7 +47,7 @@ const page = () => {
               <div className="text-sm text-muted-foreground">Note: The above shared details are confidential. <b className="bg-muted rounded">Do not share it with anyone.</b></div>
               <p className="mb-6">Thanks.</p>
               <p>Yours Truly,</p>
-              <p className=" font-medium">Curtis Mar (C.E.O at ComSec360)</p>
+              <p className=" font-medium">Team ComSec360</p>
               <p className="mt-12 text-xs">For any further queries contact at: <Link href="mailto:support@comsec360.com" className={buttonVariants({variant: "link", className: "text-xs"})}>support@comsec360.com</Link></p>
             </CardFooter>
           </Card>

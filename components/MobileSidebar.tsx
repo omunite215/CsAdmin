@@ -5,6 +5,7 @@ import { navItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button, buttonVariants } from "./ui/button";
 import {
@@ -27,6 +28,18 @@ const MobileSidebar = () => {
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="flex flex-col">
+      <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
+          <Link href="/" className="flex items-center gap-2 font-semibold">
+            <Image
+              src="/logo/logo.png"
+              width={24}
+              height={24}
+              alt="logo"
+              loading="eager"
+            />
+            <span className="">ComSec360 Admin</span>
+          </Link>
+        </div>
         <nav className="grid gap-2 text-lg font-medium">
         {navItems.map((item) => (
               <Collapsible

@@ -166,3 +166,51 @@ export const incorporationDocumentsContent = [
     href: "/documents/IRBRI.pdf"
   }
 ];
+
+export const incorporationEmailContent = [
+  {
+    id: 1,
+    title: "Invitation Shareholder for Data Entry",
+    href: "/admin/emails/1"
+  },
+  {
+    id: 2,
+    title: "Invitation Director for Data Entry",
+    href: "/admin/emails/2"
+  },
+  {
+    id: 3,
+    title: "OTP for Guest User",
+    href: "/admin/emails/3"
+  },
+  {
+    id: 4,
+    title: "Inform Shareholder for Signature",
+    href: "/admin/emails/4"
+  },
+  {
+    id: 5,
+    title: "Inform Director for Signature",
+    href: "/admin/emails/5"
+  },
+  {
+    id: 6,
+    title: "Inform Guest User for Signature",
+    href: "/admin/emails/6"
+  },
+  {
+    id: 7,
+    title: "Completion for Shareholder",
+    href: "/admin/emails/7"
+  },
+  {
+    id: 8,
+    title: "Completion for Director",
+    href: "/admin/emails/8"
+  },
+  {
+    id: 9,
+    title: "Send the Published link to other 3rd party",
+    href: "/admin/emails/9"
+  },
+];
