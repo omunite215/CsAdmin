@@ -23,13 +23,18 @@ const page = ({ params }: { params: { id: string } }) => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-            {params.id === "1" && <InvitationTemplate type="Shareholder" href="#" />}
-            {params.id === "2" && <InvitationTemplate type="Director" href="#" />}
-            {params.id === "4" && <Reminder type="Shareholder" href="#" />}
-            {params.id === "5" && <Reminder type="Director" href="#" />}
-            {params.id === "6" && <Reminder type="Guest User" href="#" />}
-            {params.id === "7" && <Completion type="Shareholder" href="#" />}
-            {params.id === "8" && <Completion type="Director" href="#" />}
+          {params.id === "1" && (
+            <InvitationTemplate type="Shareholder" href="#" />
+          )}
+          {params.id === "2" && <InvitationTemplate type="Director" href="#" />}
+          {params.id === "3" && (
+            <InvitationTemplate type="Guest User" href="#" />
+          )}
+          {params.id === "4" && <Reminder type="Shareholder" href="#" />}
+          {params.id === "5" && <Reminder type="Director" href="#" />}
+          {params.id === "6" && <Reminder type="Guest User" href="#" />}
+          {params.id === "7" && <Completion type="Shareholder" href="#" />}
+          {params.id === "8" && <Completion type="Director" href="#" />}
         </CardContent>
         <CardFooter>
           <small>Note: This is only preview of the E-mail Template</small>
