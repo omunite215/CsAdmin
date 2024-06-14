@@ -25,30 +25,49 @@ const page = () => {
           <Card>
             <CardHeader>
               <CardTitle>Welcome to ComSec360</CardTitle>
-              <CardDescription>Get Started with ComSec360 as an Account User</CardDescription>
+              <CardDescription>
+                Get Started with ComSec360 as an Account User
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <article className="space-y-6">
                 <article>
                   <p>Dear James Bond,</p>
-                  <p>Your account has been created successfully. Here are your Login Details.</p>
+                  <p>
+                    Your account has been created successfully. Here are your
+                    Login Details.
+                  </p>
                 </article>
                 <article className="flex gap-3">
-                    <h1 className=" font-semibold">Username: </h1>
-                    <mark>jamesbond007@gmail.com</mark>
+                  <h1 className=" font-semibold">Username: </h1>
+                  <mark>jamesbond007@gmail.com</mark>
                 </article>
                 <article className="flex gap-3">
-                    <h1 className=" font-semibold">Password: </h1>
-                    <mark>jY-A4y467/H|</mark>
+                  <h1 className=" font-semibold">Password: </h1>
+                  <mark>jY-A4y467/H|</mark>
                 </article>
               </article>
             </CardContent>
             <CardFooter className="flex-col items-start">
-              <div className="text-sm text-muted-foreground">Note: The above shared details are confidential. <b className="bg-muted rounded">Do not share it with anyone.</b></div>
+              <div className="text-sm text-muted-foreground">
+                Note: The above shared details are confidential.{" "}
+                <b className="bg-muted rounded">Do not share it with anyone.</b>
+              </div>
               <p className="mb-6">Thanks.</p>
               <p>Yours Truly,</p>
               <p className=" font-medium">Team ComSec360</p>
-              <p className="mt-12 text-xs">For any further queries contact at: <Link href="mailto:support@comsec360.com" className={buttonVariants({variant: "link", className: "text-xs"})}>support@comsec360.com</Link></p>
+              <p className="mt-12 text-xs">
+                For any further queries contact at:{" "}
+                <Link
+                  href="mailto:support@comsec360.com"
+                  className={buttonVariants({
+                    variant: "link",
+                    className: "text-xs",
+                  })}
+                >
+                  support@comsec360.com
+                </Link>
+              </p>
             </CardFooter>
           </Card>
         </CardContent>

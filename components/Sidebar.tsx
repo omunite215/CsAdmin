@@ -11,10 +11,11 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { buttonVariants } from "./ui/button";
+import { LayoutGrid} from "lucide-react";
 
 const Sidebar = () => {
   const currentPath = usePathname();
-  const [home, setHome] = useState(false);
+  const [admin, setAdmin] = useState(false);
   const [incorporation, setIncorporation] = useState(false);
   const [annualReturn, setAnnualReturn] = useState(false);
   return (
@@ -34,23 +35,35 @@ const Sidebar = () => {
         </div>
         <div className="flex-1">
           <nav className="grid items-start text-sm font-medium gap-4 mt-6">
+            <Link
+              href="/"
+              className={cn({
+                "flex items-center gap-3 rounded-md px-4 py-3 hover:bg-secondary text-muted-foreground transition-all hover:text-primary animate-in slide-in-from-left duration-500":
+                  true,
+                "bg-muted text-primary": "/" === currentPath,
+              })}
+            >
+              <LayoutGrid className="size-4" /> Dashboard
+            </Link>
+            <h1 className=" text-[1.01rem] font-medium mt-4">Projects</h1>
             {navItems.map((item) => (
               <Collapsible
                 key={item.title}
                 open={
-                  item.title === "Home"
-                    ? home
+                  item.title === "Admin"
+                    ? admin
                     : item.title === "Incorporation"
                     ? incorporation
                     : annualReturn
                 }
                 onOpenChange={
-                  item.title === "Home"
-                    ? setHome
+                  item.title === "Admin"
+                    ? setAdmin
                     : item.title === "Incorporation"
                     ? setIncorporation
                     : setAnnualReturn
                 }
+                className="ml-3"
               >
                 <CollapsibleTrigger
                   className={buttonVariants({

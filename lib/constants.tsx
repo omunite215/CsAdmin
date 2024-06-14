@@ -1,15 +1,10 @@
-import { Home, LayoutPanelLeft, Mail, FileText, Building2, CircleDollarSign } from "lucide-react";
+import { Home, LayoutPanelLeft, Mail, FileText, Building2, CircleDollarSign, ScanFace } from "lucide-react";
 
 export const navItems = [
   {
-    title: "Home",
-    icon: <Home className="size-4" />,
+    title: "Admin",
+    icon: <ScanFace className="size-4" />,
     items: [
-      {
-        title: "Dashboard",
-        href: "/",
-        icon: <LayoutPanelLeft className="size-4" />
-      },
       {
         title: "Emails",
         href: '/admin/emails',

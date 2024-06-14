@@ -15,9 +15,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  incorporationEmailContent,
-} from "@/lib/constants";
+import { incorporationEmailContent } from "@/lib/constants";
 import Link from "next/link";
 
 const page = () => {
