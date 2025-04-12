@@ -1,1 +1,1 @@
-Comsec Admin Not for Commercial Purpose
+Comsec Admin (Not for Commercial Purpose)
